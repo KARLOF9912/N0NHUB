@@ -1,0 +1,367 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local N0N = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local Main = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Aimbot = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local ATOG = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local F = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local Chams = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local CTOG = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TIG = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local TTOG = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Topbar = Instance.new("Frame")
+local Texttop = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
+
+--Properties:
+
+N0N.Name = "N0N"
+N0N.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+N0N.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+N0N.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = N0N
+MainFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.0357432924, 0, 0.359550565, 0)
+MainFrame.Size = UDim2.new(0, 481, 0, 301)
+MainFrame.ZIndex = 999
+
+Frame.Parent = MainFrame
+Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.109634548, 0)
+Frame.Size = UDim2.new(0, 125, 0, 268)
+
+Main.Name = "Main"
+Main.Parent = Frame
+Main.BackgroundColor3 = Color3.fromRGB(0, 128, 255)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0, 0, 0.0335820913, 0)
+Main.Size = UDim2.new(0, 125, 0, 31)
+Main.Font = Enum.Font.GothamSemibold
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main.TextSize = 30.000
+
+UICorner.Parent = Frame
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = Frame
+Aimbot.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Aimbot.Position = UDim2.new(1.08800006, 0, 0.171641782, 0)
+Aimbot.Size = UDim2.new(0, 332, 0, 31)
+Aimbot.Font = Enum.Font.GothamSemibold
+Aimbot.Text = " - Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.TextSize = 20.000
+Aimbot.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_2.Parent = Aimbot
+
+ATOG.Name = "ATOG"
+ATOG.Parent = Aimbot
+ATOG.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+ATOG.BackgroundTransparency = -0.040
+ATOG.Position = UDim2.new(0.864457786, 0, 0.0967741907, 0)
+ATOG.Size = UDim2.new(0, 33, 0, 25)
+ATOG.Font = Enum.Font.SourceSans
+ATOG.Text = ""
+ATOG.TextColor3 = Color3.fromRGB(0, 0, 0)
+ATOG.TextSize = 14.000
+
+UICorner_3.Parent = ATOG
+
+F.Name = "F"
+F.Parent = Frame
+F.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+F.BackgroundTransparency = 1.000
+F.Position = UDim2.new(1.08800006, 0, 0.0335820913, 0)
+F.Size = UDim2.new(0, 332, 0, 31)
+F.Font = Enum.Font.GothamSemibold
+F.Text = "--Function"
+F.TextColor3 = Color3.fromRGB(255, 255, 255)
+F.TextSize = 14.000
+F.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_4.Parent = F
+
+Chams.Name = "Chams"
+Chams.Parent = Frame
+Chams.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Chams.Position = UDim2.new(1.08800006, 0, 0.309701502, 0)
+Chams.Size = UDim2.new(0, 332, 0, 31)
+Chams.Font = Enum.Font.GothamSemibold
+Chams.Text = " - Chams"
+Chams.TextColor3 = Color3.fromRGB(255, 255, 255)
+Chams.TextSize = 20.000
+Chams.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_5.Parent = Chams
+
+CTOG.Name = "CTOG"
+CTOG.Parent = Chams
+CTOG.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+CTOG.BackgroundTransparency = -0.040
+CTOG.Position = UDim2.new(0.864457786, 0, 0.0967741907, 0)
+CTOG.Size = UDim2.new(0, 33, 0, 25)
+CTOG.Font = Enum.Font.SourceSans
+CTOG.Text = ""
+CTOG.TextColor3 = Color3.fromRGB(0, 0, 0)
+CTOG.TextSize = 14.000
+
+UICorner_6.Parent = CTOG
+
+TIG.Name = "TIG"
+TIG.Parent = Frame
+TIG.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TIG.Position = UDim2.new(1.08800006, 0, 0.440298498, 0)
+TIG.Size = UDim2.new(0, 332, 0, 31)
+TIG.Font = Enum.Font.GothamSemibold
+TIG.Text = " - TriggerBot"
+TIG.TextColor3 = Color3.fromRGB(255, 255, 255)
+TIG.TextSize = 20.000
+TIG.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_7.Parent = TIG
+
+TTOG.Name = "TTOG"
+TTOG.Parent = TIG
+TTOG.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TTOG.BackgroundTransparency = -0.040
+TTOG.Position = UDim2.new(0.864457786, 0, 0.0967741907, 0)
+TTOG.Size = UDim2.new(0, 33, 0, 25)
+TTOG.Font = Enum.Font.SourceSans
+TTOG.Text = ""
+TTOG.TextColor3 = Color3.fromRGB(0, 0, 0)
+TTOG.TextSize = 14.000
+
+UICorner_8.Parent = TTOG
+
+Topbar.Name = "Topbar"
+Topbar.Parent = MainFrame
+Topbar.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Topbar.BorderSizePixel = 0
+Topbar.Size = UDim2.new(0, 480, 0, 34)
+
+Texttop.Name = "Texttop"
+Texttop.Parent = Topbar
+Texttop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Texttop.BackgroundTransparency = 1.000
+Texttop.BorderSizePixel = 0
+Texttop.Size = UDim2.new(0, 175, 0, 33)
+Texttop.Font = Enum.Font.GothamSemibold
+Texttop.Text = "N0N HUB"
+Texttop.TextColor3 = Color3.fromRGB(255, 255, 255)
+Texttop.TextSize = 25.000
+Texttop.TextWrapped = true
+Texttop.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_9.Parent = Topbar
+
+UICorner_10.Parent = MainFrame
+
+local function  PNHLOYF_fake_script()
+	local script = Instance.new('LocalScript', MainFrame)
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(PNHLOYF_fake_script)()
+
+local function Xsen_fake_script()
+	local script = Instance.new('LocalScript', ATOG)
+
+	_G.aimbot = false
+	local camera = game.Workspace.CurrentCamera
+	local localplayer = game:GetService("Players").LocalPlayer
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.aimbot == false then
+			_G.aimbot = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+			function Closest()
+				local dist = math.huge -- math.huge means a really large number, 1M+.
+				local target = nil --- nil means no value
+				for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+					if v ~= localplayer then
+						if v.Character and v.Character:FindFirstChild("Head") and v.TeamColor ~= localplayer.TeamColor and _G.aimbot and v.Character.Humanoid.Health > 0 then --- creating the checks
+							local magnitude = (v.Character.Head.Position - localplayer.Character.Head.Position).magnitude
+							if magnitude < dist then
+								dist = magnitude
+								target = v
+							end
+
+						end
+					end
+				end
+				return target
+			end
+
+		else
+			_G.aimbot = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,0)
+		end
+	end)
+
+	local settings = {
+		keybind = Enum.UserInputType.MouseButton2
+	}
+
+	local UIS = game:GetService("UserInputService")
+	local aiming = false --- this toggle will make it so we lock on to the person when we press our keybind
+
+	UIS.InputBegan:Connect(function(inp)
+		if inp.UserInputType == settings.keybind then
+			aiming = true
+		end
+	end)
+
+	UIS.InputEnded:Connect(function(inp)
+		if inp.UserInputType == settings.keybind then ---- when we stop pressing the keybind it would unlock off the player
+			aiming = false
+		end
+	end)
+
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if aiming then
+			camera.CFrame = CFrame.new(camera.CFrame.Position,Closest().Character.Head.Position) -- locks into the HEAD
+		end
+	end)
+	end
+coroutine.wrap(Xsen_fake_script)()
+
+local function QHDX_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', CTOG)
+
+	_G.chams = false
+	local Players = game:GetService("Players") -- variable to get the players in the game
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.chams == false then
+			_G.chams = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			function CreateGui(name,parent,face) -- function that creates the Chams
+				local SurfaceGui = Instance.new("SurfaceGui",parent) --- Creates a SurfaceGui in the game
+				SurfaceGui.Parent = parent
+				SurfaceGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+				SurfaceGui.Face = Enum.NormalId[face]
+				SurfaceGui.LightInfluence = 0
+				SurfaceGui.ResetOnSpawn = false
+				SurfaceGui.Name = name
+				SurfaceGui.AlwaysOnTop = true
+				local Frame = Instance.new("Frame",SurfaceGui)
+				Frame.BackgroundColor3 = Color3.fromRGB(85, 170, 255) -- colour for the surfacgui
+				Frame.Size = UDim2.new(1,0,1,0)
+			end
+
+			while wait(1) do
+				for i,v in pairs (Players:GetPlayers()) do --- gets all the players in the game and loops through them
+					if v ~= Players.LocalPlayer and v.Character ~= nil and v.Character:FindFirstChild("Head") and _G.chams and v.Character.Head:FindFirstChild("cham") == nil and v.TeamColor ~= Players.LocalPlayer.TeamColor then --- Checks to check if the player is appropiate to make a cham
+						for i,v in pairs (v.Character:GetChildren()) do -- looping through every child in the character of the player
+							if v:IsA("MeshPart") or v.Name == "Head" then -- checking if the child is a body part
+								CreateGui("cham",v,"Back")
+								CreateGui("cham",v,"Front")
+								CreateGui("cham",v,"Top")
+								CreateGui("cham",v,"Bottom")
+								CreateGui("cham",v,"Right")
+								CreateGui("cham",v,"Left")
+							end
+						end
+
+					end
+				end
+			end
+		else 
+			_G.chams = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		end
+	end)
+end
+coroutine.wrap(QHDX_fake_script)()
+
+local function CHING()
+	local script = Instance.new('LocalScript', MainFrame)
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(KeyCode)
+		if KeyCode.KeyCode == Enum.KeyCode.K then
+			if MainFrame.Visible == true then
+				MainFrame.Visible = false
+			else 
+			    MainFrame.Visible = true
+
+				end
+		end
+		end)
+end
+coroutine.wrap(CHING)()
+
+local function PSS_fake_script()  
+	local script = Instance.new('LocalScript', TTOG)
+
+	_G.triggerbot = false
+	local player = game:GetService("Players").LocalPlayer
+	local mouse = player:GetMouse()
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.triggerbot then
+			_G.triggerbot = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,0)
+		else
+			_G.triggerbot = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+			game:GetService("RunService").RenderStepped:Connect(function()
+				if mouse.Target.Parent:FindFirstChild("Humanoid") and _G.triggerbot and mouse.Target.Parent.Name ~= player.Name then
+					mouse1press() wait() mouse1release()
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(PSS_fake_script)()
