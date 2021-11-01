@@ -36,7 +36,7 @@ N0N.ResetOnSpawn = false
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = N0N
-MainFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+MainFrame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 MainFrame.BorderSizePixel = 0
 MainFrame.Position = UDim2.new(0.0357432924, 0, 0.359550565, 0)
 MainFrame.Size = UDim2.new(0, 481, 0, 301)
@@ -50,7 +50,7 @@ Frame.Size = UDim2.new(0, 125, 0, 268)
 
 Main.Name = "Main"
 Main.Parent = Frame
-Main.BackgroundColor3 = Color3.fromRGB(0, 128, 255)
+Main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0, 0, 0.0335820913, 0)
 Main.Size = UDim2.new(0, 125, 0, 31)
