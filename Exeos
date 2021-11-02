@@ -1,33 +1,21 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local N0N = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local Frame = Instance.new("Frame")
 local Main = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-local Aimbot = Instance.new("TextLabel")
-local UICorner_2 = Instance.new("UICorner")
-local ATOG = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local F = Instance.new("TextLabel")
-local UICorner_4 = Instance.new("UICorner")
-local Chams = Instance.new("TextLabel")
-local UICorner_5 = Instance.new("UICorner")
-local CTOG = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local TIG = Instance.new("TextLabel")
-local UICorner_7 = Instance.new("UICorner")
-local TTOG = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
 local Topbar = Instance.new("Frame")
 local Texttop = Instance.new("TextLabel")
-local UICorner_9 = Instance.new("UICorner")
-local UICorner_10 = Instance.new("UICorner")
-
---Properties:
+local FunctionMain = Instance.new("Frame")
+local Aimbot = Instance.new("TextLabel")
+local TogFRAME = Instance.new("Frame")
+local ATOG = Instance.new("TextButton")
+local Chams = Instance.new("TextLabel")
+local FAMER = Instance.new("Frame")
+local CTOG = Instance.new("TextButton")
+local F = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local TIG = Instance.new("TextLabel")
+local uncler = Instance.new("Frame")
+local TTOG = Instance.new("TextButton")
 
 N0N.Name = "N0N"
 N0N.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -36,122 +24,30 @@ N0N.ResetOnSpawn = false
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = N0N
-MainFrame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+MainFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.0357432924, 0, 0.359550565, 0)
+MainFrame.Position = UDim2.new(0.0509101264, 0, 0.377207041, 0)
 MainFrame.Size = UDim2.new(0, 481, 0, 301)
 MainFrame.ZIndex = 999
+MainFrame.ClipsDescendants = true
 
 Frame.Parent = MainFrame
 Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0, 0, 0.109634548, 0)
-Frame.Size = UDim2.new(0, 125, 0, 268)
+Frame.Position = UDim2.new(0.0249480251, 0, 0.162790701, 0)
+Frame.Size = UDim2.new(0, 113, 0, 241)
 
 Main.Name = "Main"
 Main.Parent = Frame
 Main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0, 0, 0.0335820913, 0)
-Main.Size = UDim2.new(0, 125, 0, 31)
-Main.Font = Enum.Font.GothamSemibold
+Main.Position = UDim2.new(0, 0, -0.00376227498, 0)
+Main.Size = UDim2.new(0, 113, 0, 31)
+Main.ZIndex = 1000
+Main.Font = Enum.Font.SourceSansLight
 Main.Text = "Main"
 Main.TextColor3 = Color3.fromRGB(255, 255, 255)
 Main.TextSize = 30.000
-
-UICorner.Parent = Frame
-
-Aimbot.Name = "Aimbot"
-Aimbot.Parent = Frame
-Aimbot.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Aimbot.Position = UDim2.new(1.08800006, 0, 0.171641782, 0)
-Aimbot.Size = UDim2.new(0, 332, 0, 31)
-Aimbot.Font = Enum.Font.GothamSemibold
-Aimbot.Text = " - Aimbot"
-Aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
-Aimbot.TextSize = 20.000
-Aimbot.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_2.Parent = Aimbot
-
-ATOG.Name = "ATOG"
-ATOG.Parent = Aimbot
-ATOG.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-ATOG.BackgroundTransparency = -0.040
-ATOG.Position = UDim2.new(0.864457786, 0, 0.0967741907, 0)
-ATOG.Size = UDim2.new(0, 33, 0, 25)
-ATOG.Font = Enum.Font.SourceSans
-ATOG.Text = ""
-ATOG.TextColor3 = Color3.fromRGB(0, 0, 0)
-ATOG.TextSize = 14.000
-
-UICorner_3.Parent = ATOG
-
-F.Name = "F"
-F.Parent = Frame
-F.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-F.BackgroundTransparency = 1.000
-F.Position = UDim2.new(1.08800006, 0, 0.0335820913, 0)
-F.Size = UDim2.new(0, 332, 0, 31)
-F.Font = Enum.Font.GothamSemibold
-F.Text = "--Function"
-F.TextColor3 = Color3.fromRGB(255, 255, 255)
-F.TextSize = 14.000
-F.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_4.Parent = F
-
-Chams.Name = "Chams"
-Chams.Parent = Frame
-Chams.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Chams.Position = UDim2.new(1.08800006, 0, 0.309701502, 0)
-Chams.Size = UDim2.new(0, 332, 0, 31)
-Chams.Font = Enum.Font.GothamSemibold
-Chams.Text = " - Chams"
-Chams.TextColor3 = Color3.fromRGB(255, 255, 255)
-Chams.TextSize = 20.000
-Chams.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_5.Parent = Chams
-
-CTOG.Name = "CTOG"
-CTOG.Parent = Chams
-CTOG.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-CTOG.BackgroundTransparency = -0.040
-CTOG.Position = UDim2.new(0.864457786, 0, 0.0967741907, 0)
-CTOG.Size = UDim2.new(0, 33, 0, 25)
-CTOG.Font = Enum.Font.SourceSans
-CTOG.Text = ""
-CTOG.TextColor3 = Color3.fromRGB(0, 0, 0)
-CTOG.TextSize = 14.000
-
-UICorner_6.Parent = CTOG
-
-TIG.Name = "TIG"
-TIG.Parent = Frame
-TIG.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-TIG.Position = UDim2.new(1.08800006, 0, 0.440298498, 0)
-TIG.Size = UDim2.new(0, 332, 0, 31)
-TIG.Font = Enum.Font.GothamSemibold
-TIG.Text = " - TriggerBot"
-TIG.TextColor3 = Color3.fromRGB(255, 255, 255)
-TIG.TextSize = 20.000
-TIG.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_7.Parent = TIG
-
-TTOG.Name = "TTOG"
-TTOG.Parent = TIG
-TTOG.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-TTOG.BackgroundTransparency = -0.040
-TTOG.Position = UDim2.new(0.864457786, 0, 0.0967741907, 0)
-TTOG.Size = UDim2.new(0, 33, 0, 25)
-TTOG.Font = Enum.Font.SourceSans
-TTOG.Text = ""
-TTOG.TextColor3 = Color3.fromRGB(0, 0, 0)
-TTOG.TextSize = 14.000
-
-UICorner_8.Parent = TTOG
 
 Topbar.Name = "Topbar"
 Topbar.Parent = MainFrame
@@ -164,19 +60,143 @@ Texttop.Parent = Topbar
 Texttop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Texttop.BackgroundTransparency = 1.000
 Texttop.BorderSizePixel = 0
+Texttop.Position = UDim2.new(0.316666663, 0, 0.0294117648, 0)
 Texttop.Size = UDim2.new(0, 175, 0, 33)
-Texttop.Font = Enum.Font.GothamSemibold
+Texttop.ZIndex = 2000
+Texttop.Font = Enum.Font.SourceSansLight
 Texttop.Text = "N0N HUB"
 Texttop.TextColor3 = Color3.fromRGB(255, 255, 255)
+Texttop.TextScaled = true
 Texttop.TextSize = 25.000
 Texttop.TextWrapped = true
-Texttop.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_9.Parent = Topbar
+FunctionMain.Name = "FunctionMain"
+FunctionMain.Parent = MainFrame
+FunctionMain.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+FunctionMain.BorderSizePixel = 0
+FunctionMain.Position = UDim2.new(0.278586268, 0, 0.162790701, 0)
+FunctionMain.Size = UDim2.new(0, 332, 0, 241)
+FunctionMain.ZIndex = 20
 
-UICorner_10.Parent = MainFrame
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = FunctionMain
+Aimbot.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Aimbot.BorderSizePixel = 0
+Aimbot.Position = UDim2.new(0.0277590472, 0, 0.134297356, 0)
+Aimbot.Size = UDim2.new(0, 309, 0, 31)
+Aimbot.ZIndex = 999
+Aimbot.Font = Enum.Font.SourceSansLight
+Aimbot.Text = " - Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.TextSize = 25.000
+Aimbot.TextXAlignment = Enum.TextXAlignment.Left
 
-local function  PNHLOYF_fake_script()
+TogFRAME.Name = "TogFRAME"
+TogFRAME.Parent = Aimbot
+TogFRAME.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TogFRAME.BorderSizePixel = 0
+TogFRAME.Position = UDim2.new(0.81877023, 0, 0.0967741907, 0)
+TogFRAME.Size = UDim2.new(0, 47, 0, 24)
+TogFRAME.ZIndex = 10000
+
+ATOG.Name = "ATOG"
+ATOG.Parent = TogFRAME
+ATOG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ATOG.BackgroundTransparency = -0.040
+ATOG.BorderSizePixel = 0
+ATOG.Position = UDim2.new(-0.00200000009, 0, 0, 0)
+ATOG.Size = UDim2.new(0, 22, 0, 24)
+ATOG.ZIndex = 100000
+ATOG.Font = Enum.Font.SourceSans
+ATOG.Text = ""
+ATOG.TextColor3 = Color3.fromRGB(0, 0, 0)
+ATOG.TextSize = 14.000
+
+Chams.Name = "Chams"
+Chams.Parent = FunctionMain
+Chams.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Chams.BorderSizePixel = 0
+Chams.Position = UDim2.new(0.0277590472, 0, 0.29725337, 0)
+Chams.Size = UDim2.new(0, 309, 0, 31)
+Chams.ZIndex = 999
+Chams.Font = Enum.Font.SourceSansLight
+Chams.Text = " - Chams"
+Chams.TextColor3 = Color3.fromRGB(255, 255, 255)
+Chams.TextSize = 25.000
+Chams.TextXAlignment = Enum.TextXAlignment.Left
+
+FAMER.Name = "FAMER"
+FAMER.Parent = Chams
+FAMER.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+FAMER.BorderSizePixel = 0
+FAMER.Position = UDim2.new(0.81877023, 0, 0.0967741907, 0)
+FAMER.Size = UDim2.new(0, 47, 0, 24)
+FAMER.ZIndex = 10000
+
+CTOG.Name = "CTOG"
+CTOG.Parent = FAMER
+CTOG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CTOG.BackgroundTransparency = -0.040
+CTOG.BorderSizePixel = 0
+CTOG.Position = UDim2.new(-0.00200000009, 0, 0, 0)
+CTOG.Size = UDim2.new(0, 22, 0, 24)
+CTOG.ZIndex = 100000
+CTOG.Font = Enum.Font.SourceSans
+CTOG.Text = ""
+CTOG.TextColor3 = Color3.fromRGB(0, 0, 0)
+CTOG.TextSize = 14.000
+
+F.Name = "F"
+F.Parent = FunctionMain
+F.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+F.BackgroundTransparency = 1.000
+F.Position = UDim2.new(0.0277590472, 0, -0.00376227289, 0)
+F.Size = UDim2.new(0, 322, 0, 31)
+F.ZIndex = 999
+F.Font = Enum.Font.SourceSansLight
+F.Text = "--Function"
+F.TextColor3 = Color3.fromRGB(255, 255, 255)
+F.TextSize = 30.000
+F.TextWrapped = true
+F.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner.Parent = F
+
+TIG.Name = "TIG"
+TIG.Parent = FunctionMain
+TIG.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+TIG.BorderSizePixel = 0
+TIG.Position = UDim2.new(0.0277590472, 0, 0.461045384, 0)
+TIG.Size = UDim2.new(0, 309, 0, 31)
+TIG.ZIndex = 999
+TIG.Font = Enum.Font.SourceSansLight
+TIG.Text = " - TriggerBot"
+TIG.TextColor3 = Color3.fromRGB(255, 255, 255)
+TIG.TextSize = 25.000
+TIG.TextXAlignment = Enum.TextXAlignment.Left
+
+uncler.Name = "uncler"
+uncler.Parent = TIG
+uncler.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+uncler.BorderSizePixel = 0
+uncler.Position = UDim2.new(0.81877023, 0, 0.0967741907, 0)
+uncler.Size = UDim2.new(0, 47, 0, 24)
+uncler.ZIndex = 10000
+
+TTOG.Name = "TTOG"
+TTOG.Parent = uncler
+TTOG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TTOG.BackgroundTransparency = -0.040
+TTOG.BorderSizePixel = 0
+TTOG.Position = UDim2.new(-0.00200000009, 0, 0, 0)
+TTOG.Size = UDim2.new(0, 22, 0, 24)
+TTOG.ZIndex = 100000
+TTOG.Font = Enum.Font.SourceSans
+TTOG.Text = ""
+TTOG.TextColor3 = Color3.fromRGB(0, 0, 0)
+TTOG.TextSize = 14.000
+
+local function BRRT()
 	local script = Instance.new('LocalScript', MainFrame)
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
@@ -213,71 +233,9 @@ local function  PNHLOYF_fake_script()
 		end
 	end)
 end
-coroutine.wrap(PNHLOYF_fake_script)()
+coroutine.wrap(BRRT)()
 
-local function Xsen_fake_script()
-	local script = Instance.new('LocalScript', ATOG)
-
-	_G.aimbot = false
-	local camera = game.Workspace.CurrentCamera
-	local localplayer = game:GetService("Players").LocalPlayer
-
-	script.Parent.MouseButton1Click:Connect(function()
-		if _G.aimbot == false then
-			_G.aimbot = true
-			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
-			function Closest()
-				local dist = math.huge -- math.huge means a really large number, 1M+.
-				local target = nil --- nil means no value
-				for i,v in pairs (game:GetService("Players"):GetPlayers()) do
-					if v ~= localplayer then
-						if v.Character and v.Character:FindFirstChild("Head") and v.TeamColor ~= localplayer.TeamColor and _G.aimbot and v.Character.Humanoid.Health > 0 then --- creating the checks
-							local magnitude = (v.Character.Head.Position - localplayer.Character.Head.Position).magnitude
-							if magnitude < dist then
-								dist = magnitude
-								target = v
-							end
-
-						end
-					end
-				end
-				return target
-			end
-
-		else
-			_G.aimbot = false
-			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,0)
-		end
-	end)
-
-	local settings = {
-		keybind = Enum.UserInputType.MouseButton2
-	}
-
-	local UIS = game:GetService("UserInputService")
-	local aiming = false --- this toggle will make it so we lock on to the person when we press our keybind
-
-	UIS.InputBegan:Connect(function(inp)
-		if inp.UserInputType == settings.keybind then
-			aiming = true
-		end
-	end)
-
-	UIS.InputEnded:Connect(function(inp)
-		if inp.UserInputType == settings.keybind then ---- when we stop pressing the keybind it would unlock off the player
-			aiming = false
-		end
-	end)
-
-	game:GetService("RunService").RenderStepped:Connect(function()
-		if aiming then
-			camera.CFrame = CFrame.new(camera.CFrame.Position,Closest().Character.Head.Position) -- locks into the HEAD
-		end
-	end)
-	end
-coroutine.wrap(Xsen_fake_script)()
-
-local function QHDX_fake_script() -- TextButton.LocalScript 
+local function QHDX_fake_script() 
 	local script = Instance.new('LocalScript', CTOG)
 
 	_G.chams = false
@@ -286,7 +244,8 @@ local function QHDX_fake_script() -- TextButton.LocalScript
 	script.Parent.MouseButton1Click:Connect(function()
 		if _G.chams == false then
 			_G.chams = true
-			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			FAMER.BackgroundColor3 = Color3.new(0, 255, 0)
+			CTOG:TweenPosition(UDim2.new(0.53, 0,0, 0),"Out","Quint", 0.7, true)
 			function CreateGui(name,parent,face) -- function that creates the Chams
 				local SurfaceGui = Instance.new("SurfaceGui",parent) --- Creates a SurfaceGui in the game
 				SurfaceGui.Parent = parent
@@ -320,26 +279,93 @@ local function QHDX_fake_script() -- TextButton.LocalScript
 			end
 		else 
 			_G.chams = false
-			script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+			CTOG:TweenPosition(UDim2.new(-0.002, 0,0, 0),"Out","Quint", 0.7, true)
+			FAMER.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
 		end
 	end)
 end
 coroutine.wrap(QHDX_fake_script)()
 
+
+local function FSX_SCRIPT()
+local script = Instance.new('LocalScript', ATOG)
+_G.aimbot = false
+local camera = game.Workspace.CurrentCamera
+local localplayer = game:GetService("Players").LocalPlayer
+
+script.Parent.MouseButton1Click:Connect(function()
+	if _G.aimbot == false then
+		_G.aimbot = true
+		TogFRAME.BackgroundColor3 = Color3.new(0, 255, 0)
+		ATOG:TweenPosition(UDim2.new(0.53, 0,0, 0),"Out","Quint", 0.7, true)
+		function Closest()
+			local dist = math.huge -- math.huge means a really large number, 1M+.
+			local target = nil --- nil means no value
+			for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+				if v ~= localplayer then
+					if v.Character and v.Character:FindFirstChild("Head") and v.TeamColor ~= localplayer.TeamColor and _G.aimbot and v.Character.Humanoid.Health > 0 then --- creating the checks
+						local magnitude = (v.Character.Head.Position - localplayer.Character.Head.Position).magnitude
+						if magnitude < dist then
+							dist = magnitude
+							target = v
+						end
+
+					end
+				end
+			end
+			return target
+		end
+
+	else
+		_G.aimbot = false
+		ATOG:TweenPosition(UDim2.new(-0.002, 0,0, 0),"Out","Quint", 0.7, true)
+		TogFRAME.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+	end
+end)
+
+local settings = {
+	keybind = Enum.UserInputType.MouseButton2
+}
+
+local UIS = game:GetService("UserInputService")
+local aiming = false --- this toggle will make it so we lock on to the person when we press our keybind
+
+UIS.InputBegan:Connect(function(inp)
+	if inp.UserInputType == settings.keybind then
+		aiming = true
+	end
+end)
+
+UIS.InputEnded:Connect(function(inp)
+	if inp.UserInputType == settings.keybind then ---- when we stop pressing the keybind it would unlock off the player
+		aiming = false
+	end
+end)
+
+game:GetService("RunService").RenderStepped:Connect(function()
+	if aiming then
+		camera.CFrame = CFrame.new(camera.CFrame.Position,Closest().Character.Head.Position) -- locks into the HEAD
+	end
+end)
+end
+coroutine.wrap(FSX_SCRIPT)()
+
 local function CHING()
 	local script = Instance.new('LocalScript', MainFrame)
 	local UserInputService = game:GetService("UserInputService")
-	
+	_G.OPEN = true
+
 	UserInputService.InputBegan:Connect(function(KeyCode)
 		if KeyCode.KeyCode == Enum.KeyCode.K then
-			if MainFrame.Visible == true then
-				MainFrame.Visible = false
+			if 	_G.OPEN == true then
+					_G.OPEN = false
+					MainFrame:TweenSize(UDim2.new(0, 0, 0, 301),"Out","Quint", 0.7, true)
 			else 
-			    MainFrame.Visible = true
-
-				end
+			    MainFrame:TweenSize(UDim2.new(0, 481, 0, 301),"Out","Quint", 0.7, true)
+					_G.OPEN = true
+			end
 		end
-		end)
+	end)
 end
 coroutine.wrap(CHING)()
 
@@ -352,10 +378,12 @@ local function PSS_fake_script()
 	script.Parent.MouseButton1Click:Connect(function()
 		if _G.triggerbot then
 			_G.triggerbot = false
-			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,0)
+			uncler.BackgroundColor3 = Color3.new(0, 255, 0)
+			TTOG:TweenPosition(UDim2.new(0.53, 0,0, 0),"Out","Quint", 0.7, true)
 		else
 			_G.triggerbot = true
-			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+			TTOG:TweenPosition(UDim2.new(-0.002, 0,0, 0),"Out","Quint", 0.7, true)
+			uncler.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
 			game:GetService("RunService").RenderStepped:Connect(function()
 				if mouse.Target.Parent:FindFirstChild("Humanoid") and _G.triggerbot and mouse.Target.Parent.Name ~= player.Name then
 					mouse1press() wait() mouse1release()
